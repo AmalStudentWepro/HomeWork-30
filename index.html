@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="timer-box">
+        <h1 class="header">Таймер</h1>
+        <div class="circle">
+            <svg class="progress" width="220" height="220">
+                <circle cx="110" cy="110" r="90" stroke="#ddd" stroke-width="15" fill="none" />
+                <circle id="progress-ring" cx="110" cy="110" r="90" stroke="orange" stroke-width="15" fill="none" stroke-dasharray="565.48" stroke-dashoffset="565.48" stroke-linecap="round"/>
+            </svg>
+            <span id="timer" class="time-display">00:00</span>
+        </div>
+        <div class="button-container">
+            <button id="playPauseButton" class="play-button">▶</button>
+            <button class="reset-button">⭮</button>
+        </div>
+        <button class="add-timer">+ Добавить другой таймер</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
